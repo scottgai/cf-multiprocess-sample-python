@@ -1,0 +1,14 @@
+---
+applications:
+  - name: mprocs
+    buildpacks:
+      - python_buildpack
+    memory: 256M
+    processes:
+      - type: web
+        instances: 2
+        command: python app.py
+      - type: worker
+        instances: 1
+        command: python worker.py
+
