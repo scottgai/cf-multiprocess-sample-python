@@ -33,3 +33,6 @@ The worker process runs independently — useful for background jobs, message qu
 Logs for each process type can be viewed with:
 
 `cf logs multiprocess-sample --recent`
+
+Route traffice to specific app/process instance:
+https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-2/tpcf/http-routing.html
